@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alexis Chondrogiannis">
+    <meta name="description" content="Contact How To Travel for travel advice, partnership opportunities, or to share your travel experiences">
+    <title>Contact Us - Get in Touch | How To Travel</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--  Navigation Bar with Dropdown Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-compass me-2"></i>How To Travel
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="destinationsDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-globe-americas me-1"></i>Destinations
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="destinations.html#europe">Europe</a></li>
+                            <li><a class="dropdown-item" href="destinations.html#asia">Asia</a></li>
+                            <li><a class="dropdown-item" href="destinations.html#americas">Americas</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="tips.html">
+                            <i class="bi bi-lightbulb me-1"></i>Travel Tips
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">
+                            <i class="bi bi-images me-1"></i>Gallery
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">
+                            <i class="bi bi-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs Back to the Home Page -->
+    <nav aria-label="breadcrumb" class="container mt-5 pt-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Contact</li>
+        </ol>
+    </nav>
+
+    <!-- Page Heading -->
+    <div class="container mt-3">
+        <h1 class="text-center mb-5 section-title">Contact Us</h1>
+        
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <p class="lead">Have questions, need travel advice, or want to share your travel experiences? We'd love to hear from you!</p>
+            </div>
+        </div>
+
+        <div class="row g-5">
+            <!-- A Contact Form -->
+            <div class="col-lg-8">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="mb-0"><i class="bi bi-envelope-paper me-2"></i>Send Us a Message</h4>
+                    </div>
+                    <div class="card-body">
+                        <form id="contactForm">
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="firstName" class="form-label">First Name *</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="lastName" class="form-label">Last Name *</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject *</label>
+                                <select class="form-select" id="subject" required>
+                                    <option value="" selected disabled>Select a topic</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="destination">Destination Advice</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="feedback">Website Feedback</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Your Message *</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="newsletter">
+                                <label class="form-check-label" for="newsletter">
+                                    Subscribe to our newsletter for travel tips and destination guides
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-lg">
+                                <i class="bi bi-send me-2"></i>Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Location -->
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="bi bi-geo-alt text-primary me-2"></i>Our Office
+                        </h5>
+                        <p class="card-text">
+                            101 S Main Street<br>
+                            Harrisonburg, VA 22801<br>
+                            United States
+                        </p>
+                    </div>
+                </div>
+                
+            <!-- Contact Information -->
+            <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <i class="bi bi-telephone text-primary me-2"></i>Contact Details
+                        </h5>
+                        <p class="card-text">
+                            <strong>Phone:</strong> (555) 123-4567<br>
+                            <strong>Email:</strong> info@howtotravel.com<br>
+                            <strong>Hours:</strong> Mon-Fri, 9AM-6PM EST
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ Section -->
+        <div class="mt-5 pt-5 border-top">
+            <h3 class="text-center mb-4">Frequently Asked Questions</h3>
+            
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            How can I contribute to How To Travel?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We welcome contributions from fellow travelers! You can share your travel stories, photos, or tips by contacting us through this form or emailing submissions@howtotravel.com.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            Do you offer personalized travel planning?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            While we don't offer full-service travel planning, we're happy to provide destination recommendations and travel advice based on your interests and budget.
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            How often is your content updated?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We update our destination guides and travel tips regularly to ensure information is current and accurate. Major updates occur at least quarterly.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Picture of 101 S Main Street on a Map -->
+        <div class="mt-5">
+            <div class="card">
+                <div class="card-header bg-light">
+                    <h5 class="mb-0"><i class="bi bi-map me-2"></i>Find Our Office</h5>
+                </div>
+                <div class="card-body p-0 d-flex">
+                    <div class="bg-secondary text-white p-5 text-center" style="height: 300px;">
+                        <i class="bi bi-geo-alt-fill fs-1 mb-3 d-block"></i>
+                        <h4>Map Location</h4>
+                        <p>101 S Main Street, Harrisonburg, VA</p>
+                        <img src="images/map.jpg" alt="Location for 101 S Main Steet on a Map" class="img-fluid w-100 object-fit-cover" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold">
+                        <i class="bi bi-compass me-2"></i>How To Travel
+                    </h5>
+                    <p>Your comprehensive guide to exploring the world responsibly and memorably.</p>
+                </div>
+                
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50"><i class="bi bi-chevron-right me-1"></i>Home</a></li>
+                        <li><a href="destinations.html" class="text-white-50"><i class="bi bi-chevron-right me-1"></i>Destinations</a></li>
+                        <li><a href="tips.html" class="text-white-50"><i class="bi bi-chevron-right me-1"></i>Travel Tips</a></li>
+                        <li><a href="gallery.html" class="text-white-50"><i class="bi bi-chevron-right me-1"></i>Gallery</a></li>
+                        <li><a href="contact.html" class="text-white-50"><i class="bi bi-chevron-right me-1"></i>Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4 mb-3">
+                    <h5>Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt me-2"></i>101 South Main Street</li>
+                        <li><i class="bi bi-telephone me-2"></i>(555) 606-1123</li>
+                        <li><i class="bi bi-envelope me-2"></i>info@howtotravel.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="text-center">
+                <p>&copy; 2025 How To Travel. All rights reserved. | We're here to help you travel better.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

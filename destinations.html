@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alexis Chondrogiannis">
+    <meta name="description" content="Explore amazing travel destinations around the world with detailed guides and insider tips">
+    <title>Travel Destinations - Comprehensive Guides | How To Travel</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation with Dropdown Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-compass me-2"></i>How To Travel
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="destinationsDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-globe-americas me-1"></i>Destinations
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#europe">Europe</a></li>
+                            <li><a class="dropdown-item" href="#asia">Asia</a></li>
+                            <li><a class="dropdown-item" href="#americas">Americas</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="tips.html">
+                            <i class="bi bi-lightbulb me-1"></i>Travel Tips
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">
+                            <i class="bi bi-images me-1"></i>Gallery
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="bi bi-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs Using Booksrtap -->
+    <nav aria-label="breadcrumb" class="container mt-5 pt-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Destinations</li>
+        </ol>
+    </nav>
+
+     <!-- Header for Destination Page -->
+    <div class="container mt-3">
+        <h1 class="text-center mb-5 section-title">Explore Destinations</h1>
+        
+        <!-- Introduction for Destination Page -->
+        <div class="row mb-5">
+            <div class="col-lg-8 mx-auto text-center">
+                <p class="lead">Discover amazing destinations around the world with our comprehensive travel guides. Click on any destination to learn more about what makes it special.</p>
+            </div>
+        </div>
+
+        <!-- Sections for Euopean Countries -->
+        <section id="europe" class="mb-5">
+            <h2 class="mb-4 border-bottom pb-2">
+                <i class="bi bi-building-columns text-primary me-2"></i>Europe
+            </h2>
+            
+            <div class="row g-4">
+                <div class="col-md-6" id="athens">
+                    <div class="card h-100">
+                        <img src="images/athens.jpg" class="card-img-top" alt="Picture of Athens">
+                        <div class="card-body">
+                            <h5 class="card-title">Athens, Greece</h5>
+                            <p class="card-text">The cradle of Western civilization, Athens offers a unique blend of ancient history and modern culture. Visit the iconic Acropolis, explore the Plaka neighborhood, and enjoy delicious Greek cuisine.</p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <span class="badge bg-primary me-1">Historical</span>
+                                    <span class="badge bg-secondary me-1">Cultural</span>
+                                    <span class="badge bg-success">Food</span>
+                                </div>
+                                <small class="text-muted">Best time to visit: April-June</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6" id="paris">
+                    <div class="card h-100">
+                        <img src="images/paris.jpg" class="card-img-top" alt="Picture of Paris">
+                        <div class="card-body">
+                            <h5 class="card-title">Paris, France</h5>
+                            <p class="card-text">The City of Light needs no introduction. From the Eiffel Tower to the Louvre, Paris is filled with iconic landmarks, world-class museums, and incredible cuisine at every corner.</p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <span class="badge bg-primary me-1">Romantic</span>
+                                    <span class="badge bg-secondary me-1">Art</span>
+                                    <span class="badge bg-success">Food</span>
+                                </div>
+                                <small class="text-muted">Best time to visit: March-May</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section for Pictures of Countries in Asia-->
+        <section id="asia" class="mb-5">
+            <h2 class="mb-4 border-bottom pb-2">
+                <i class="bi bi-brightness-alt-high text-primary me-2"></i>Asia
+            </h2>
+            
+            <div class="row g-4">
+                <div class="col-md-6" id="tokyo">
+                    <div class="card h-100">
+                        <img src="images/tokyo.jpg" class="card-img-top" alt="Picture of Tokyo">
+                        <div class="card-body">
+                            <h5 class="card-title">Tokyo, Japan</h5>
+                            <p class="card-text">A city where ancient tradition meets cutting-edge technology. Explore historic temples, experience bustling Shibuya Crossing, and indulge in some of the world's best cuisine.</p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <span class="badge bg-primary me-1">Modern</span>
+                                    <span class="badge bg-secondary me-1">Traditional</span>
+                                    <span class="badge bg-success">Food</span>
+                                </div>
+                                <small class="text-muted">Best time to visit: March-May</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6" id="bali">
+                    <div class="card h-100">
+                        <img src="images/bali.jpg" class="card-img-top" alt="Picture of Bali">
+                        <div class="card-body">
+                            <h5 class="card-title">Bali, Indonesia</h5>
+                            <p class="card-text">Island of the gods, Bali offers stunning beaches, lush rice terraces, vibrant culture, and spiritual retreats. Perfect for relaxation, adventure, and cultural immersion.</p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <span class="badge bg-primary me-1">Beach</span>
+                                    <span class="badge bg-secondary me-1">Spiritual</span>
+                                    <span class="badge bg-success">Adventure</span>
+                                </div>
+                                <small class="text-muted">Best time to visit: April-October</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Americas Section Showing two Countries in the Americas Continents -->
+        <section id="americas" class="mb-5">
+            <h2 class="mb-4 border-bottom pb-2">
+                <i class="bi bi-globe-americas text-primary me-2"></i>Americas
+            </h2>
+            
+            <div class="row g-4">
+                <div class="col-md-6" id="barbados">
+                    <div class="card h-100">
+                        <img src="images/barbados.jpg" class="card-img-top" alt="Picture of the Beach in Barbados">
+                        <div class="card-body">
+                            <h5 class="card-title">Barbados, Caribbean</h5>
+                            <p class="card-text">Known for its stunning beaches, warm hospitality, and rich culture. Enjoy water sports, explore Harrison's Cave, and experience the lively Oistins Fish Fry.</p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <span class="badge bg-primary me-1">Beach</span>
+                                    <span class="badge bg-secondary me-1">Relaxation</span>
+                                    <span class="badge bg-success">Culture</span>
+                                </div>
+                                <small class="text-muted">Best time to visit: December-April</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6" id="newyork">
+                    <div class="card h-100">
+                        <img src="images/newyork.jpg" class="card-img-top" alt="Picture of Times Square in New York City">
+                        <div class="card-body">
+                            <h5 class="card-title">New York City, USA</h5>
+                            <p class="card-text">The city that never sleeps offers endless possibilities. From Broadway shows to iconic landmarks like Times Square and Central Park, NYC has something for everyone.</p>
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <span class="badge bg-primary me-1">Urban</span>
+                                    <span class="badge bg-secondary me-1">Shopping</span>
+                                    <span class="badge bg-success">Arts</span>
+                                </div>
+                                <small class="text-muted">Best time to visit: April-June, Sept-Oct</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold">
+                        <i class="bi bi-compass me-2"></i>How To Travel
+                    </h5>
+                    <p>Your comprehensive guide to exploring the world responsibly and memorably.</p>
+                </div>
+                
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50"><i class="bi bi-chevron-right me-1"></i>Home</a></li>
+                        <li><a href="destinations.html" class="text-white-50"><i class="bi bi-chevron-right me-1"></i>Destinations</a></li>
+                        <li><a href="tips.html" class="text-white-50"><i class="bi bi-chevron-right me-1"></i>Travel Tips</a></li>
+                        <li><a href="gallery.html" class="text-white-50"><i class="bi bi-chevron-right me-1"></i>Gallery</a></li>
+                        <li><a href="contact.html" class="text-white-50"><i class="bi bi-chevron-right me-1"></i>Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4 mb-3">
+                    <h5>Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt me-2"></i>101 South Main Street</li>
+                        <li><i class="bi bi-telephone me-2"></i>(555) 606-1123</li>
+                        <li><i class="bi bi-envelope me-2"></i>info@howtotravel.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="text-center">
+                <p>&copy; 2025 How To Travel. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

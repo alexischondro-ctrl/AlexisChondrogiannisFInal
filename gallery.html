@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alexis Chondrogiannis">
+    <meta name="description" content="Browse our travel photo gallery featuring stunning destinations around the world with modal viewing feature">
+    <title>Travel Photo Gallery | How To Travel</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar with Dropdown Menu -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="bi bi-compass me-2"></i>How To Travel
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="destinationsDropdown" role="button" data-bs-toggle="dropdown">
+                            <i class="bi bi-globe-americas me-1"></i>Destinations
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="destinations.html#europe">Europe</a></li>
+                            <li><a class="dropdown-item" href="destinations.html#asia">Asia</a></li>
+                            <li><a class="dropdown-item" href="destinations.html#americas">Americas</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="tips.html">
+                            <i class="bi bi-lightbulb me-1"></i>Travel Tips
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" href="gallery.html">
+                            <i class="bi bi-images me-1"></i>Gallery
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">
+                            <i class="bi bi-envelope me-1"></i>Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Breadcrumbs Using Bootstrap -->
+    <nav aria-label="breadcrumb" class="container mt-5 pt-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Gallery</li>
+        </ol>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="container mt-3">
+        <h1 class="text-center mb-5 section-title">Travel Photo Gallery</h1>
+        <p class="lead text-center mb-5">Click any image to view it larger in the modal viewer. Browse stunning photos from around the world to inspire your next adventure.</p>
+
+        <!-- Gallery Grid - 6 Images -->
+        <div class="row g-4">
+            <!-- Image 1 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" 
+                     data-bs-image="images/athens.jpg"
+                     data-bs-title="Athens, Greece" 
+                     data-bs-description="Tenple in Athens">
+                    <img src="images/athens.jpg" 
+                         class="img-fluid gallery-img" alt="Athens, Greece">
+                    <div class="p-3 bg-light">
+                        <h6 class="mb-0">Athens, Greece</h6>
+                        <small class="text-muted">Ancient ruins</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal"
+                     data-bs-image="images/tokyo.jpg"
+                     data-bs-title="Tokyo, Japan" 
+                     data-bs-description="The Biggest City in the World, Tokyo.">
+                    <img src="images/tokyo.jpg" 
+                         class="img-fluid gallery-img" alt="Tokyo, Japan">
+                    <div class="p-3 bg-light">
+                        <h6 class="mb-0">Tokyo, Japan</h6>
+                        <small class="text-muted">Vibrant city lights</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal"
+                     data-bs-image="images/barbados.jpg"
+                     data-bs-title="Barbados, Caribbean" 
+                     data-bs-description="Amazing Carribean Beach in Barbados.">
+                    <img src="images/barbados.jpg" 
+                         class="img-fluid gallery-img" alt="Barbados, Caribbean">
+                    <div class="p-3 bg-light">
+                        <h6 class="mb-0">Barbados, Caribbean</h6>
+                        <small class="text-muted">Tropical paradise beach</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal"
+                     data-bs-image="images/paris.jpg"
+                     data-bs-title="Paris, France" 
+                     data-bs-description="The Eiffel Tower illuminated at night in Paris, the City of Light.">
+                    <img src="images/paris.jpg" 
+                         class="img-fluid gallery-img" alt="Paris, France">
+                    <div class="p-3 bg-light">
+                        <h6 class="mb-0">Paris, France</h6>
+                        <small class="text-muted">Iconic city landmark</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 5 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal"
+                     data-bs-image="images/bali.jpg"
+                     data-bs-title="Bali, Indonesia" 
+                     data-bs-description="Beautiful Beaches of Bali.">
+                    <img src="images/bali.jpg" 
+                         class="img-fluid gallery-img" alt="Bali, Indonesia">
+                    <div class="p-3 bg-light">
+                        <h6 class="mb-0">Bali, Indonesia</h6>
+                        <small class="text-muted">Pacific Beaches</small>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image 6 -->
+            <div class="col-md-4 col-lg-3">
+                <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal"
+                     data-bs-image="images/newyork.jpg"
+                     data-bs-title="New York, USA" 
+                     data-bs-description="times square skyline with setting sun.">
+                    <img src="images/newyork.jpg" 
+                         class="img-fluid gallery-img" alt="New York, USA">
+                    <div class="p-3 bg-light">
+                        <h6 class="mb-0">New York, USA</h6>
+                        <small class="text-muted">Urban cityscape</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Connection to the Contact Pagen -->
+        <div class="alert alert-primary mt-5">
+            <div class="d-flex align-items-center">
+                <i class="bi bi-camera fs-1 me-3"></i>
+                <div>
+                    <h5 class="alert-heading">Share Your Travel Photos!</h5>
+                    <p class="mb-0">Want to see your travel photos featured here? <a href="contact.html" class="alert-link">Contact us</a> to share your amazing travel experiences.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Image Viewing (Advanced Feature) -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="modalImageTitle">Image Title</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <img src="" alt="" id="modalImage" class="img-fluid rounded">
+                    <p class="mt-3" id="modalImageDescription">Image description will appear here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">
+                        <i class="bi bi-heart me-1"></i>Save to Favorites
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5 class="fw-bold">
+                        <i class="bi bi-compass me-2"></i>How To Travel
+                    </h5>
+                    <p>Your comprehensive guide to exploring the world responsibly and memorably.</p>
+                </div>
+                
+                <div class="col-md-4 mb-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white-50"><i class="bi bi-chevron-right me-1"></i>Home</a></li>
+                        <li><a href="destinations.html" class="text-white-50"><i class="bi bi-chevron-right me-1"></i>Destinations</a></li>
+                        <li><a href="tips.html" class="text-white-50"><i class="bi bi-chevron-right me-1"></i>Travel Tips</a></li>
+                        <li><a href="gallery.html" class="text-white-50"><i class="bi bi-chevron-right me-1"></i>Gallery</a></li>
+                        <li><a href="contact.html" class="text-white-50"><i class="bi bi-chevron-right me-1"></i>Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-4 mb-3">
+                    <h5>Contact Info</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt me-2"></i>101 South Main Street</li>
+                        <li><i class="bi bi-telephone me-2"></i>(555) 606-1123</li>
+                        <li><i class="bi bi-envelope me-2"></i>info@howtotravel.com</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="text-center">
+                <p>&copy; 2025 How To Travel. All rights reserved.</p>
+                <p class="text-white-50 small">Gallery images from Unsplash for educational purposes.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
